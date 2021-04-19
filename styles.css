@@ -10,6 +10,10 @@ body{
   align-items: center;
 }
 
+hr{
+  border-bottom: none;
+}
+
 .accordian{
   display: grid;
   grid-template-rows: 150px auto;
