@@ -91,6 +91,10 @@ hr{
   color: #000;
 }
 
+.attribution { font-size: 9px; text-align: center; color: #eee; margin-top: 5px;}
+.attribution a { color: #fff; font-size: 11px;}
+.attribution a:hover {color:hsl(14, 88%, 65%);}
+
 @media only screen and (min-width: 830px){
 
   body{
@@ -143,6 +147,13 @@ hr{
   .heading{
     text-align: left;
     font-size: 2rem;
+  }
+
+  .attribution{
+    font-size: 11px;
+  }
+  .attribution a{
+    font-size: 14px;
   }
 
 }
