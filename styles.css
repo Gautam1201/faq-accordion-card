@@ -1,0 +1,142 @@
+
+body{
+  margin: 40px 0;
+  min-height: 100vh;
+  font-size: 12px;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  font-family: 'Kumbh Sans', sans-serif;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordian{
+  display: grid;
+  grid-template-rows: 150px auto;
+  margin-top: 3rem;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 300px;
+  min-height: 500px;
+  box-shadow: 0 20px 25px -10px hsl(237, 12%, 33%);
+  max-width: 1000px;
+}
+
+.template-image{
+  background-image: url("images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.illustration{
+  height: 100%;
+}
+
+.illustration-mobile{
+  position: relative;
+  bottom: 105px;
+}
+
+.illustration-desktop{
+  display: none;
+}
+
+.illustration-box{
+   display: none;
+}
+
+.heading{
+  text-align: center;
+}
+
+.container{
+  margin: -2.5rem 1.5rem 2rem;
+}
+
+.query{
+  width: 100%;
+  background-color:#fff;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s;
+  padding: 1rem 0;
+  color: hsl(237, 12%, 33%);
+}
+
+.arrow{
+  float: right;
+}
+
+.answered{
+  display: none;
+  overflow: hidden;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  color: hsl(240, 6%, 50%);
+  line-height: 1.5;
+}
+
+.query:hover{
+  color: hsl(14, 88%, 65%);
+}
+
+.afterClick{
+  font-weight: 700;
+  color: #000;
+}
+
+@media only screen and (min-width: 830px){
+
+  body{
+    margin:0 5%;
+  }
+
+  .accordian{
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 2fr;
+    width: 100%;
+    min-width: 550px;
+    max-width: 900px;
+  }
+
+  .accordian .template-image{
+    position: relative;
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 115% -18rem;
+  }
+
+  .illustration{
+    overflow: hidden;
+  }
+
+  .illustration-desktop{
+    display: block;
+    position: relative;
+    right: 15%;
+    top: 4rem;
+
+  }
+
+  .illustration-mobile{
+    display: none;
+  }
+
+  .illustration-box{
+    display: block;
+    position: absolute;
+    top: 13rem;
+    left: -20%;
+
+  }
+
+  .container{
+    margin: 2.5rem 1.5rem 2rem;
+  }
+
+  .heading{
+    text-align: left;
+    font-size: 2rem;
+  }
+
+}
